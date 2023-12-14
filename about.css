@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+body {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* The overflow property determines what to do if content overflows an element's box. Setting overflow to hidden will hide/clip the overflowing content. */
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+}
+
+header {
+    background-color: #967969;
+    color: white;
+    /* Setting min-height so the height for the header section can expand if needed */
+    min-height: 90px;
+    border-bottom: 3px solid black;
+    padding: 50px 0;
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    /* Changing/increasing the amount of vertical space the ul takes up so the li elements can be centered vertically */
+    height: 100%;
+}
+
+header li {
+    /* Removes the bullet point or number on a list item */
+    list-style: none;
+    padding: 0 20px;
+}
+
+header a {
+    color: #e6e6e6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#highlight, #current a {
+    color: white;
+    /* text-decoration: dashed; */
+    font-weight: 700;
+}
+
+/* Selects all a elements except for the "HOME" a tag */
+a:not(#current a):hover {
+    color: white;
+    font-weight: 700
+}
+
+#showcase {
+    /* background-image: url("rr-abrot-pNIgH0y3upM-unsplash.jpg"); */
+    /* background-image: url(ante-samarzija-lsmu0rUhUOk-unsplash.jpg); */
+    /* background-position: left; */
+    background-color: #967969;
+    height: 2000px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.backstory {
+    text-decoration: underline;
+    font-style: italic;
+    list-style-type: none;
+    /* font-size: xx-large; */
+    /* margin-left: 875px; */
+    margin-top: 100px;
+    /* text-align: center; */
+}
+
+.back {
+    list-style-type: none;
+    /* margin-left: 120px; */
+    margin-bottom: 300px;
+}
+
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #967969;
+    overflow: hidden;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid black;
+  }
+  .fb {
+    font-size: large;
+    /* margin-left: 200px; */
+  }
+
+  /* The animation code */
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: #967969;}
+  }
+  
+  /* The element to apply the animation to */
+  .backstory {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #967969;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+  .back {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #967969;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+  .aboutus {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #967969;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+  .desc {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #967969;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+  .findushead {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #967969;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+  .findus {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #967969;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #967969;
+    color: white;
+  }
+
+  /* .container .pic {
+    float: top;
+    height: 485px;
+    /* width: 1000px; */
+    /* vertical-align: top; */
+
+  /* } */
+
+  .aboutus {
+    /* margin-bottom: 275px; */
+    margin-right: 850px;
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+  .desc {
+    margin-bottom: 275px;
+    margin-right: 850px;
+  }
+
+
+
+  .findushead {
+    text-decoration: underline;
+    font-style: italic;
+    /* margin-bottom: 40px; */
+  }
+
+  footer {
+    /* text-align: center; */
+    margin-right: 100px;
+  }
